@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    font-family : "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#cursor{
+    height: 15px;
+    width: 15px;
+    position: fixed;
+    border-radius: 50%;
+    background-color: #EDBFFF;
+    z-index: 9;
+    mix-blend-mode: difference;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+}
+#main{
+    background-color: #0f0f0d;
+    cursor: none;
+}
+#page1{
+    min-height: 100vh;
+    width: 100vw;
+    padding-top: 25vh;
+    color: #fff;
+    
+}
+#nav{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px;
+        position: fixed;
+        mix-blend-mode: difference;
+        z-index: 102;
+        color: white;
+
+}
+#nav-part2{
+    display: flex;
+    gap: 22px;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+#nav-part3{
+
+    height: 2.5vh;
+    width: 1.2vw;
+    border-radius: 50%;
+    background-color: #fff;
+    
+}
+#page1>h1{
+    font-family: sans-serif;
+  
+    margin-left: 10vw;
+    font-size: 15vh;
+    font-weight: 300;
+}
+#page1>h2{
+    font-family: sans-serif;
+    margin-left: 27vw;
+    font-size: 15vh;
+    font-weight: 300;
+}
+#nav>img{
+    height: 20px;
+}
+
+#home{
+        
+    border-bottom: 1.5px solid white;    
+}
+
+#page1 video{
+
+    width: 60vw;
+    position: relative;
+    margin-top: 20vh;
+   left:50%;
+   transform: translate(-50%,0);
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    padding:15vh 10vw;
+    color: black;
+    border-bottom: 5px solid #6c6c6c;
+    
+
+}
+#page2-btm{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 22vh 0 ;
+}
+#page2-right{
+    width: 18vw;
+    height: 30vh;
+    color: rgb(205, 27, 27);
+  
+}
+#page2-left{
+
+    color: black;
+    font-size: 3vw;
+    font-weight:lighter;
+}
+#duo{
+    font-weight: 100;
+    font-size: 7vw;
+    color: black;
+}
+button{
+    width: 98%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0;
+    background-color: #EDBFFF;
+    color: #111;
+    margin-top: 20px;
+}
+#line{
+    width: 100%;
+    height:1px;
+    color: #6c6c6c;
+}
+.page3{
+    min-height:180vh ;
+    width: 100%;
+    position: relative;
+    
+}
+#selected{
+    font-size: 6.8vw;
+    color:black;
+    font-weight: 300;
+    margin-left:100px;
+    margin-top: 100px;
+}
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.page3-part1 img{
+    height: 400px;
+    width: 500px;
+    margin-top: 160px;
+    margin-left: 70px;
+
+
+}
+.page3-part1 video{
+    height: 400px;
+    width: 600px;
+    margin-top: 35px;
+
+
+}
+#page4{
+    min-height: 100vh;
+    width: 100%;
+   
+    padding: 100px ;
+    
+}
+#page5{
+    min-height: 100vh;
+    width: 100%;
+}
+    
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.elem h1{
+    font-size: 5vw;
+    transition: all ease-out 0.5s;
+    color: white;
+}
+#text{
+    
+    height: 90px;
+    overflow: hidden;
+}
+.elem img{
+    height:250px;
+    width: 250px;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(5deg);
+
+}
+.elem img:nth-child(1){
+    left: 2%;
+}
+.elem img:nth-child(3){
+    right: 5%;
+}
+.elem:hover h1{
+     color: #dea4df;
+        transform: translateY(-100%);
+   
+}
+.elem:hover img{
+    transform: translateY(0%) rotate(0deg);
+
+        opacity: 1;
+}
+#footer{
+
+    height: 90vh;
+    width: 100%;
+    background-color: #EDBFFF;
+    margin-top: 25vh;
+}
+#page5 h2{
+
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    z-index: 9;
+    padding: 140px 4px;
+    margin-bottom: 50px;
+}
+.box{
+            
+        display: flex;
+        align-items: center;
+
+        justify-content: space-between;
+        height: 70px;
+        border-top: 1.2px solid  #dadada ;
+        padding: 0 20px;}
+
+.box:nth-last-child(1){
+    border-bottom: 2px solid #dadada;
+
+}
+#purple{
+
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    background-color: #f49ef4;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity ease 1s;
+    display: none;
+}
